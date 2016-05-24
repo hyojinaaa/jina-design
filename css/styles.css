@@ -1,0 +1,63 @@
+#fullpage {
+  font-family: 'Nixie One', cursive;
+}
+
+#section1 {
+  background: #C9FFBF;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #C9FFBF, #FFAFBD);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #C9FFBF, #FFAFBD);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+}
+
+#section2 {
+  background: #EFEFBB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #EFEFBB, #D4D3DD);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #EFEFBB, #D4D3DD);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#section3 {
+  background: #F1F2B5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F1F2B5, #135058);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F1F2B5, #135058);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#section4 {
+  background: #70e1f5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #70e1f5, #ffd194);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #70e1f5, #ffd194);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+  list-style: none;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Nixie One', cursive;
+}
+ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 30px;
+}
+ul a {
+  text-decoration: none;
+  color: #333;
+}
+ul img {
+  width: 178px;
+  height: 130px;
+}
+
+/*# sourceMappingURL=styles.css.map */
