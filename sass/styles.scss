@@ -1,4 +1,9 @@
 
+#fullpage {
+	font-family: 'Nixie One', cursive;
+}
+
+
 #section1 {
 
 
@@ -47,6 +52,32 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
 
 // }
 
+ul {
+
+	list-style: none;
+	width: 1000px;
+	// background-color: yellow;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Nixie One', cursive;
+
+	li {
+		display: inline-block;
+		line-height: 100px;
+		margin: 30px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #333;
+	}
+
+	img {
+		width: 178px;
+		height: 130px;
+	}
+
+}
 
 
 
