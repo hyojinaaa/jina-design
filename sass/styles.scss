@@ -42,15 +42,15 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
         
 
 }
-// .section {
-// 	position: relative
+.section {
+	position: relative;
 
-// 	#scroll {
-// 	position: absolute;
-// 	top: 50px;
-// 	}
+	#scroll {
+	position: absolute;
+	top: 100px;
+	}
 
-// }
+}
 
 ul {
 
@@ -63,8 +63,12 @@ ul {
 
 	li {
 		display: inline-block;
-		line-height: 100px;
+		vertical-align: top;
 		margin: 30px;
+
+	}
+	li:nth-child(3){
+		margin-top: -20px;
 	}
 
 	a {

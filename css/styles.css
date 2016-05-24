@@ -39,6 +39,14 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.section {
+  position: relative;
+}
+.section #scroll {
+  position: absolute;
+  top: 100px;
+}
+
 ul {
   list-style: none;
   width: 1000px;
@@ -48,8 +56,11 @@ ul {
 }
 ul li {
   display: inline-block;
-  line-height: 100px;
+  vertical-align: top;
   margin: 30px;
+}
+ul li:nth-child(3) {
+  margin-top: -20px;
 }
 ul a {
   text-decoration: none;
