@@ -1,0 +1,66 @@
+/* Slider
+http://www.freshdesignweb.com/drop-down-responsive-menu-with-css3-and-jquery.html
+*/
+
+/*===== nav style ======*/
+.dropdown {
+	position: absolute;
+	right: 20px;
+	top: -35px;
+}
+
+.dropdown nav select {
+	display:none;  this is just for the mobile display 
+}
+
+.dropdown nav ul {
+	display:block;
+	z-index:999999;
+}
+.dropdown nav ul li {
+	display:block;
+	padding:50px 3px 30px;
+	margin-left:30px;
+	position:relative;
+}
+
+.dropdown ul {
+	width: 200px;
+	padding: 0;
+}
+.dropdown ul li {
+	margin: 0;
+}
+
+
+/*===== sub_menu Style =======*/
+.dropdown nav ul li ul.sub_menu {
+	position:absolute;
+	right: 20px;
+	margin-top: 10px;
+	background:white;
+	border:1px solid #ececec;
+	display:none;
+	z-index:999999;
+ }
+
+.dropdown nav ul li ul.sub_menu li {
+	float:none;
+	margin:0;
+	padding: 10px;
+	border-bottom:1px solid #ececec;
+}
+.dropdown nav ul li ul.sub_menu li a {
+	white-space: nowrap;
+	text-transform:capitalize;
+	color:#777;
+}
+.dropdown nav ul li ul.sub_menu li:hover {
+	color: white;
+	background-color: #78C6B5;
+	cursor: pointer;
+}
+
+
+
+
