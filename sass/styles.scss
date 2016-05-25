@@ -1,8 +1,30 @@
+@-moz-keyframes ka-moving {
+	
+	0%{
+		left: 0;
+		top: 0;
+	}
+	25%{
+		left: 200px;
+		top: 350px;
+	}
+	50%{
+		left: 150px;
+		top: 500px;
+	}
+	75%{
+		left: 400px;
+		top: 420px;
+	}
+	100%{
+		left: 280px;
+		top: 620px;
+	}
+}
 
 #fullpage {
 	font-family: 'Nixie One', cursive;
 }
-
 
 #section1 {
 
@@ -16,6 +38,7 @@ text-align: center;
 	i {
 		color: #0DAE8B;
 	}
+
 }
 
 #section2 {
@@ -71,6 +94,15 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
 	position: absolute;
 	bottom: 13px;
 	}
+
+	#ka1 {
+	position: absolute;
+	top: 0;
+	animation-name: ka-moving;
+  	animation-duration: 2s;
+  	animation-timing-function: ease-in-out;
+ 	animation-delay: .5s;
+}
 
 }
 
