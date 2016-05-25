@@ -152,32 +152,64 @@
   animation-delay: .5s;
 }
 
-ul {
-  list-style: none;
-  width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  font-family: 'Nixie One', cursive;
+#nav-container {
+  position: absolute;
 }
-ul li {
-  display: inline-block;
-  vertical-align: top;
-  margin: 35px 30px;
+#nav-container .nav {
+  display: none;
 }
-ul li:nth-child(3) {
-  margin-top: 0;
+#nav-container .mobile-nav .mobile-logo {
+  position: relative;
+  float: left;
 }
-ul li.highlight a {
+#nav-container .mobile-nav i {
   color: #78C6B5;
 }
-ul a {
-  text-decoration: none;
-  color: #333;
-}
-ul a:hover {
-  color: #78C6B5;
+#nav-container .mobile-nav .dropdown {
+  position: relative;
+  float: right;
 }
 
+@media all and (min-width: 892px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  ul {
+    list-style: none;
+    width: 800px;
+    background-color: yellow;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Nixie One', cursive;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 35px 30px;
+  }
+  li:nth-child(3) {
+    margin-top: 0;
+  }
+
+  li.highlight a {
+    color: #78C6B5;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  a:hover {
+    color: #78C6B5;
+  }
+}
 #about div:first-child {
   width: 300px;
   height: 400px;
