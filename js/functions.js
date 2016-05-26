@@ -54,3 +54,9 @@ $(document).ready(function(){
 		}
  	});
  });
+
+// Slide menu on mobile device
+$('.menu').on('click', function(e){
+   $(this).toggleClass('active');
+   $(this).siblings('.fullscreen-menu').toggleClass('active');
+});

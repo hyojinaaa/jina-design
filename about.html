@@ -5,9 +5,9 @@
 		<title>JINA Web Design & Debvelopment </title>
 		<meta name="description" content="Between 150 and 160 characters">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/slidemenu.css">
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/dropdown.css">
 		<link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Cinzel:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
@@ -23,30 +23,35 @@
 				<li><a href="contact.html">Contact</a></li>
 
 			</ul>
-
-			<div class="mobile-nav">
-				<div class="mobile-logo"><a href="index.html"><img src="img/logo.small.png"></a></div>
-				<div class="dropdown" id="dropdowm-menu">
-					
-					<nav>
-						<ul>
-							
-							<li>
-								<a href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-								<ul style="display: none;" class="sub_menu">
-									<li><a href="about.html">About</a></li>
-									<li><a href="work.html">Work</a></li>
-									<li><a href="photos.html">Photos</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</li>
-							
-						</ul>
-					</nav>
-				</div>
-			</div>
 		</div> <!-- nav container finish -->
 
+
+			<div class="mobile-nav">
+				<div id="mobile-logo">
+		
+					<a href="index.html"><img src="img/logo.small.png"></a>
+				
+				</div>
+			
+
+				<div class="header">
+	  
+				  <div class="menu-container">
+				    <div class="menu">Menu</div>
+				    <div class="fullscreen-menu">
+				      <ul>
+				        <li><a href="about.html">About</a></li>
+				        <li><a href="work.html">Work</a></li>
+				        <li><a href="photos.html">Photos</a></li>
+				        <li><a href="contact.html">Contact</a></li>
+				      </ul>  
+				    </div>
+				  </div>
+	  
+				</div>
+			</div>
+
+			
 		<main id="about">
 			<div><img src="img/about.jpg"></div>
 			<div>
@@ -72,6 +77,10 @@
 		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 		<script type="text/javascript" src="js/fullpage.js"></script>
 		<script type="text/javascript" src="js/functions.js"></script>
+		
+
+
+
 
 
 	</body>
