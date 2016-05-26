@@ -52,10 +52,6 @@ padding: 20px;
 	.dropdown {
 		
 		position: absolute;
-
-		i {
-		color: #78C6B5;
-		}
 	}
 
 	.small-logo {
@@ -68,6 +64,11 @@ padding: 20px;
 		max-width: 1000px;
 		display: block;
 		margin-top: -20px;
+	}
+
+
+	i {
+	color: #78C6B5;
 	}
 
 	// #love {
@@ -147,22 +148,32 @@ padding: 20px;
 
 #section3 {
 
-
-background: #F1F2B5; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #F1F2B5 , #135058); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #F1F2B5 , #135058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #E55D87; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E55D87 , #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 padding: 20px;
 
-	div {
+	.dropdown {
+		
 		position: absolute;
-
-		i {
-		color: #78C6B5;
-		}
 	}
 
-	#section3-img{
-		margin-top: 80px;
+	.small-logo {
+		position: absolute;
+		top: 30px;
+	}
+
+	img {
+		margin: 0 auto;
+		max-width: 1200px;
+		display: block;
+		margin-top: -20px;
+	}
+
+
+	i {
+	color: #78C6B5;
 	}
 
         
@@ -173,7 +184,19 @@ padding: 20px;
 background: #70e1f5; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #70e1f5 , #ffd194); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+  
+  a {
+
+  	 p {
+  	 	font-size: 40px;
+  	 	text-decoration: underline;
+  	 	font-weight: bold;
+
+  	 	&:hover {
+  	 		 transform: scale(1.1);
+  	 	}
+  	 }
+  }      
 
 }
 
@@ -194,9 +217,10 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
 
 	#scroll3 {
 		position: absolute;
-		bottom: 13px;
+		bottom: 45px;
 	}
 }
+
 
 // 	#ka1 {
 // 	position: absolute;
@@ -306,6 +330,10 @@ $animation: all 0.25s ease;
         line-height:2em;
         font-size: 20px;
         letter-spacing: 0.05em;
+
+        &:hover {
+        	color: #78C6B5;
+        }
       }
     }
   }

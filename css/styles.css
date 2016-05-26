@@ -3,22 +3,18 @@
     left: 0;
     top: 0;
   }
-
   25% {
     left: 200px;
     top: 350px;
   }
-
   50% {
     left: 150px;
     top: 500px;
   }
-
   75% {
     left: 400px;
     top: 420px;
   }
-
   100% {
     left: 280px;
     top: 620px;
@@ -31,9 +27,9 @@
 #section1 {
   background: #C9FFBF;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #c9ffbf, #ffafbd);
+  background: -webkit-linear-gradient(to left, #C9FFBF, #FFAFBD);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #c9ffbf, #ffafbd);
+  background: linear-gradient(to left, #C9FFBF, #FFAFBD);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
 }
@@ -44,17 +40,14 @@
 #section2 {
   background: #EFEFBB;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #efefbb, #d4d3dd);
+  background: -webkit-linear-gradient(to left, #EFEFBB, #D4D3DD);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #efefbb, #d4d3dd);
+  background: linear-gradient(to left, #EFEFBB, #D4D3DD);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px;
 }
 #section2 .dropdown {
   position: absolute;
-}
-#section2 .dropdown i {
-  color: #78C6B5;
 }
 #section2 .small-logo {
   position: absolute;
@@ -66,24 +59,34 @@
   display: block;
   margin-top: -20px;
 }
+#section2 i {
+  color: #78C6B5;
+}
 
 #section3 {
-  background: #F1F2B5;
+  background: #E55D87;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #f1f2b5, #135058);
+  background: -webkit-linear-gradient(to left, #E55D87, #5FC3E4);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f1f2b5, #135058);
+  background: linear-gradient(to left, #E55D87, #5FC3E4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px;
 }
-#section3 div {
+#section3 .dropdown {
   position: absolute;
 }
-#section3 div i {
-  color: #78C6B5;
+#section3 .small-logo {
+  position: absolute;
+  top: 30px;
 }
-#section3 #section3-img {
-  margin-top: 80px;
+#section3 img {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: block;
+  margin-top: -20px;
+}
+#section3 i {
+  color: #78C6B5;
 }
 
 #section4 {
@@ -93,6 +96,14 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #70e1f5, #ffd194);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#section4 a p {
+  font-size: 40px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#section4 a p:hover {
+  transform: scale(1.1);
 }
 
 .section {
@@ -109,7 +120,7 @@
 }
 .section #scroll3 {
   position: absolute;
-  bottom: 13px;
+  bottom: 45px;
 }
 
 body {
@@ -211,6 +222,9 @@ body {
   line-height: 2em;
   font-size: 20px;
   letter-spacing: 0.05em;
+}
+.fullscreen-menu ul li a:hover {
+  color: #78C6B5;
 }
 .fullscreen-menu.active {
   opacity: 1;
