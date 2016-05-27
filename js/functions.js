@@ -60,3 +60,64 @@ $('.menu').on('click', function(e){
    $(this).toggleClass('active');
    $(this).siblings('.fullscreen-menu').toggleClass('active');
 });
+
+// Contact page local storage
+if( localStorage.getItem('name') ) {
+
+	document.querySelector('#name').value = localStorage.getItem('name');
+}
+
+if( localStorage.getItem('email') ) {
+
+	document.querySelector('#email').value = localStorage.getItem('email');
+}
+
+if( localStorage.getItem('subject') ) {
+
+	// Loop over each option
+	var selectElement = document.querySelector('#subject');
+
+	for(var i=0; i<selectElement.length; i++) {
+
+		// Is this the option the user chose?
+		if( localStorage.getItem('subject') == selectElement[i].value ) {
+
+			// Select this option
+			selectElement[i].setAttribute('selected', 'selected');
+		}
+	}
+
+}
+
+if( localStorage.getItem('message') ) {
+
+	document.querySelector('#message').value = localStorage.getItem('message');
+}
+
+
+// Listen for input on the name field
+document.querySelector('#name').onkeyup = function(){
+
+	localStorage.setItem('name', this.value);
+}
+
+// Listen for the changes inthe country options
+document.querySelector('#email').onkeyup = function(){
+
+	localStorage.setItem('email', this.value);
+
+}
+
+document.querySelector('#subject').onchange = function(){
+
+	localStorage.setItem('subject', this.value);
+
+}
+
+document.querySelector('#message').onkeyup = function(){
+
+	localStorage.setItem('message', this.value);
+
+}
+
+
