@@ -39,7 +39,13 @@ text-align: center;
 		color: #0DAE8B;
 	}
 
+	.scroll-tablet, .scroll-desktop {
+  	margin: 0 auto;
+  	}
+
 }
+
+
 
 #section2 {
 
@@ -47,7 +53,7 @@ text-align: center;
 background: #EFEFBB; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #EFEFBB , #D4D3DD); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #EFEFBB , #D4D3DD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-padding: 20px;
+padding: 5px;
 
 	.dropdown {
 		
@@ -55,95 +61,33 @@ padding: 20px;
 	}
 
 	.small-logo {
+
+		display: none;
+
+		@media all and (min-width: 768px) {
+			display: block;
+		}
 		position: absolute;
 		top: 30px;
 	}
-
-	img {
-		margin: 0 auto;
-		max-width: 1000px;
-		display: block;
-		margin-top: -20px;
-	}
-
 
 	i {
 	color: #78C6B5;
 	}
 
-	// #love {
-	// 	width: 300px;
-	// 	margin: 0 auto;
-	// 	margin-top: -100px;
-	// 	margin-bottom: 20px;
-	// 	padding-left: 50px;
-	// 	font-size: 50px;
-	// }
+	@media all and (min-width: 1280px) {
 
-	// p {
-	// 	font-size: 35px;
-	// 	letter-spacing: 5px;
+		padding: 20px;
 
-	// }
+		img {
+			margin: 0 auto;
+			max-width: 1000px;
+			display: block;
+			margin-top: -20px;
+		}
 
-	// #love-ko {
-	// 		span:nth-child(1) {
-	// 			color: #e84948;
-	// 		}
-	// 		span:nth-child(2) {
-	// 			color: #4a90e2;
-	// 		}
-
-	// 		float: left;
-	// 		margin-left: 320px;
-	// 		margin-top: 100px;
-
-	// 	}
-
-	// #love-nz {
-
-	// 		span:nth-child(1) {
-	// 			color: #b33544;
-	// 		}
-	// 		span:nth-child(2) {
-	// 			color: #1c1162;
-	// 		}
-
-	// 		float: right;
-	// 		margin-right: 320px;
-	// 		margin-top: 200px;
-	// 	}
-
-	// #nz-img {
-	// 		width: 520px;
-	// 		height: 380px;
-		
-		
-	// 	img {
-	// 		max-width: 100%;
-	// 		max-height: 100%;
-
-	// 	}
-	// }
-
-	// #love-img-container {
-	// 	width: 1200px;
-	// 	margin: 0 auto;
-
-	// 		div {
-	// 			display: inline-block;
-	// 			margin: 10px;
-	// 		}
-
-	// 		#ko-img {
-	// 			vertical-align: 100%;
-	// 		}
-
-	// }
-
-
-
-        
+	}
+	        
 }
 
 #section3 {
@@ -152,7 +96,7 @@ background: #E55D87; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #E55D87 , #5FC3E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
-padding: 20px;
+padding: 5px;
 
 	.dropdown {
 		
@@ -160,22 +104,31 @@ padding: 20px;
 	}
 
 	.small-logo {
+
+		display: none;
+
+		@media all and (min-width: 768px) {
+			display: block;
+		}
 		position: absolute;
 		top: 30px;
 	}
-
-	img {
-		margin: 0 auto;
-		max-width: 1200px;
-		display: block;
-		margin-top: -20px;
-	}
-
 
 	i {
 	color: #78C6B5;
 	}
 
+	@media all and (min-width: 1280px) {
+
+		padding: 20px;
+
+		img {
+			margin: 0 auto;
+			max-width: 1200px;
+			display: block;
+			margin-top: -20px;
+		}
+	}
         
 }
 
@@ -188,15 +141,33 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
   a {
 
   	 p {
-  	 	font-size: 40px;
+  	 	font-size: 30px;
   	 	text-decoration: underline;
   	 	font-weight: bold;
+  	 	font-family: 'Oleo Script Swash Caps', cursive;
+  	 	letter-spacing: 4px;
+  	 	margin-bottom: 10px;
+  	 	color: #333;
+
+  	 	@media all and (min-width: 768px) {
+  	 		font-size: 40px;
+  	 	}
+
+  	 	@media all and (min-width: 1280px) {
+  	 		font-size: 60px;
+  	 	}
 
   	 	&:hover {
   	 		 transform: scale(1.1);
   	 	}
   	 }
-  }      
+  } 
+
+  .scroll-tablet, .scroll-desktop {
+  	margin: 0 auto;
+  }
+
+   
 
 }
 
@@ -211,15 +182,49 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
 	}
 
 	#scroll2 {
+
 		position: absolute;
+		bottom: 20px;
+
+		@media all and (min-width: 768px) {
+		
 		bottom: 45px;
+		}	
 	}
 
 	#scroll3 {
 		position: absolute;
-		bottom: 45px;
+		bottom: 20px;
+
+		@media all and (min-width: 768px) {
+			bottom: 45px;
+		}
 	}
 }
+
+.scroll-tablet, .scroll-desktop {
+		display: none;
+	}
+
+	@media all and (min-width: 768px) {
+		.scroll-mobile, .scroll-desktop {
+			display: none;
+		}
+
+		.scroll-tablet {
+			display: block;
+		}
+	}
+
+	@media all and (min-width: 1280px) {
+		.scroll-mobile, .scroll-tablet {
+			display: none;
+		}
+
+		.scroll-desktop {
+			display: block;
+		}
+	}
 
 
 // 	#ka1 {

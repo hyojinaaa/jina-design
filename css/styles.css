@@ -3,18 +3,22 @@
     left: 0;
     top: 0;
   }
+
   25% {
     left: 200px;
     top: 350px;
   }
+
   50% {
     left: 150px;
     top: 500px;
   }
+
   75% {
     left: 400px;
     top: 420px;
   }
+
   100% {
     left: 280px;
     top: 620px;
@@ -27,66 +31,91 @@
 #section1 {
   background: #C9FFBF;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #C9FFBF, #FFAFBD);
+  background: -webkit-linear-gradient(to left, #c9ffbf, #ffafbd);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #C9FFBF, #FFAFBD);
+  background: linear-gradient(to left, #c9ffbf, #ffafbd);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
 }
 #section1 i {
   color: #0DAE8B;
 }
+#section1 .scroll-tablet, #section1 .scroll-desktop {
+  margin: 0 auto;
+}
 
 #section2 {
   background: #EFEFBB;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #EFEFBB, #D4D3DD);
+  background: -webkit-linear-gradient(to left, #efefbb, #d4d3dd);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #EFEFBB, #D4D3DD);
+  background: linear-gradient(to left, #efefbb, #d4d3dd);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 20px;
+  padding: 5px;
 }
 #section2 .dropdown {
   position: absolute;
 }
 #section2 .small-logo {
+  display: none;
   position: absolute;
   top: 30px;
 }
-#section2 img {
-  margin: 0 auto;
-  max-width: 1000px;
-  display: block;
-  margin-top: -20px;
+@media all and (min-width: 768px) {
+  #section2 .small-logo {
+    display: block;
+  }
 }
 #section2 i {
   color: #78C6B5;
+}
+@media all and (min-width: 1280px) {
+  #section2 {
+    padding: 20px;
+  }
+  #section2 img {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: block;
+    margin-top: -20px;
+  }
 }
 
 #section3 {
   background: #E55D87;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #E55D87, #5FC3E4);
+  background: -webkit-linear-gradient(to left, #e55d87, #5fc3e4);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #E55D87, #5FC3E4);
+  background: linear-gradient(to left, #e55d87, #5fc3e4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 20px;
+  padding: 5px;
 }
 #section3 .dropdown {
   position: absolute;
 }
 #section3 .small-logo {
+  display: none;
   position: absolute;
   top: 30px;
 }
-#section3 img {
-  margin: 0 auto;
-  max-width: 1200px;
-  display: block;
-  margin-top: -20px;
+@media all and (min-width: 768px) {
+  #section3 .small-logo {
+    display: block;
+  }
 }
 #section3 i {
   color: #78C6B5;
+}
+@media all and (min-width: 1280px) {
+  #section3 {
+    padding: 20px;
+  }
+  #section3 img {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: block;
+    margin-top: -20px;
+  }
 }
 
 #section4 {
@@ -98,12 +127,29 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #section4 a p {
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: underline;
   font-weight: bold;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: #333;
+}
+@media all and (min-width: 768px) {
+  #section4 a p {
+    font-size: 40px;
+  }
+}
+@media all and (min-width: 1280px) {
+  #section4 a p {
+    font-size: 60px;
+  }
 }
 #section4 a p:hover {
   transform: scale(1.1);
+}
+#section4 .scroll-tablet, #section4 .scroll-desktop {
+  margin: 0 auto;
 }
 
 .section {
@@ -116,13 +162,45 @@
 }
 .section #scroll2 {
   position: absolute;
-  bottom: 45px;
+  bottom: 20px;
+}
+@media all and (min-width: 768px) {
+  .section #scroll2 {
+    bottom: 45px;
+  }
 }
 .section #scroll3 {
   position: absolute;
-  bottom: 45px;
+  bottom: 20px;
+}
+@media all and (min-width: 768px) {
+  .section #scroll3 {
+    bottom: 45px;
+  }
 }
 
+.scroll-tablet, .scroll-desktop {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .scroll-mobile, .scroll-desktop {
+    display: none;
+  }
+
+  .scroll-tablet {
+    display: block;
+  }
+}
+@media all and (min-width: 1280px) {
+  .scroll-mobile, .scroll-tablet {
+    display: none;
+  }
+
+  .scroll-desktop {
+    display: block;
+  }
+}
 body {
   font-family: 'Nixie One', cursive;
 }
