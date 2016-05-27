@@ -40,6 +40,9 @@
 #section1 i {
   color: #0DAE8B;
 }
+#section1 .scroll-tablet, #section1 .scroll-desktop {
+  margin: 0 auto;
+}
 
 #section2 {
   background: #EFEFBB;
@@ -48,23 +51,34 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #efefbb, #d4d3dd);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 20px;
+  padding: 5px;
 }
 #section2 .dropdown {
   position: absolute;
 }
 #section2 .small-logo {
+  display: none;
   position: absolute;
   top: 30px;
 }
-#section2 img {
-  margin: 0 auto;
-  max-width: 1000px;
-  display: block;
-  margin-top: -20px;
+@media all and (min-width: 768px) {
+  #section2 .small-logo {
+    display: block;
+  }
 }
 #section2 i {
   color: #78C6B5;
+}
+@media all and (min-width: 1280px) {
+  #section2 {
+    padding: 20px;
+  }
+  #section2 img {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: block;
+    margin-top: -20px;
+  }
 }
 
 #section3 {
@@ -74,23 +88,34 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #e55d87, #5fc3e4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 20px;
+  padding: 5px;
 }
 #section3 .dropdown {
   position: absolute;
 }
 #section3 .small-logo {
+  display: none;
   position: absolute;
   top: 30px;
 }
-#section3 img {
-  margin: 0 auto;
-  max-width: 1200px;
-  display: block;
-  margin-top: -20px;
+@media all and (min-width: 768px) {
+  #section3 .small-logo {
+    display: block;
+  }
 }
 #section3 i {
   color: #78C6B5;
+}
+@media all and (min-width: 1280px) {
+  #section3 {
+    padding: 20px;
+  }
+  #section3 img {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: block;
+    margin-top: -20px;
+  }
 }
 
 #section4 {
@@ -102,12 +127,29 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #section4 a p {
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: underline;
   font-weight: bold;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: #333;
+}
+@media all and (min-width: 768px) {
+  #section4 a p {
+    font-size: 40px;
+  }
+}
+@media all and (min-width: 1280px) {
+  #section4 a p {
+    font-size: 60px;
+  }
 }
 #section4 a p:hover {
   transform: scale(1.1);
+}
+#section4 .scroll-tablet, #section4 .scroll-desktop {
+  margin: 0 auto;
 }
 
 .section {
@@ -120,13 +162,45 @@
 }
 .section #scroll2 {
   position: absolute;
-  bottom: 45px;
+  bottom: 20px;
+}
+@media all and (min-width: 768px) {
+  .section #scroll2 {
+    bottom: 45px;
+  }
 }
 .section #scroll3 {
   position: absolute;
-  bottom: 45px;
+  bottom: 20px;
+}
+@media all and (min-width: 768px) {
+  .section #scroll3 {
+    bottom: 45px;
+  }
 }
 
+.scroll-tablet, .scroll-desktop {
+  display: none;
+}
+
+@media all and (min-width: 768px) {
+  .scroll-mobile, .scroll-desktop {
+    display: none;
+  }
+
+  .scroll-tablet {
+    display: block;
+  }
+}
+@media all and (min-width: 1280px) {
+  .scroll-mobile, .scroll-tablet {
+    display: none;
+  }
+
+  .scroll-desktop {
+    display: block;
+  }
+}
 body {
   font-family: 'Nixie One', cursive;
 }
@@ -421,6 +495,119 @@ footer i {
     margin-top: 50px;
     text-align: center;
   }
+}
+#contact {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+}
+@media all and (min-width: 600px) {
+  #contact {
+    width: 500px;
+  }
+}
+@media all and (min-width: 1000px) {
+  #contact {
+    width: 800px;
+  }
+}
+#contact h3 {
+  font-family: 'Cinzel', serif;
+  padding-top: 10px;
+}
+#contact p {
+  font-size: 13px;
+  font-family: 'Titillium Web', sans-serif;
+}
+@media all and (min-width: 600px) {
+  #contact p {
+    width: 480px;
+  }
+}
+@media all and (min-width: 1000px) {
+  #contact p {
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+#contact label {
+  display: none;
+}
+#contact input {
+  width: 240px;
+  margin-bottom: 5px;
+  height: 20px;
+  font-family: 'Titillium Web', sans-serif;
+}
+@media all and (min-width: 600px) {
+  #contact input {
+    width: 440px;
+  }
+}
+@media all and (min-width: 1000px) {
+  #contact input {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+}
+#contact select {
+  width: 248px;
+  border: 1px solid #cccccc;
+  height: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #888888;
+}
+#contact select option {
+  padding: 10px;
+}
+@media all and (min-width: 600px) {
+  #contact select {
+    width: 460px;
+  }
+}
+@media all and (min-width: 1000px) {
+  #contact select {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+}
+#contact textarea {
+  width: 248px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  padding: 2px 5px;
+  box-sizing: border-box;
+}
+@media all and (min-width: 600px) {
+  #contact textarea {
+    width: 460px;
+  }
+}
+@media all and (min-width: 1000px) {
+  #contact textarea {
+    margin-bottom: 20px;
+    padding-left: 10px;
+  }
+}
+#contact #submit-btn {
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+}
+#contact #submit-btn:hover {
+  background-color: #78C6B5;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

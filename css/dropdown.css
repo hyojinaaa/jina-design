@@ -23,6 +23,7 @@ http://www.freshdesignweb.com/drop-down-responsive-menu-with-css3-and-jquery.htm
 	padding:50px 3px 30px;
 	margin-left:30px;
 	position:relative;
+	text-align: right;
 }
 
 .dropdown ul {
@@ -37,7 +38,7 @@ http://www.freshdesignweb.com/drop-down-responsive-menu-with-css3-and-jquery.htm
 /*===== sub_menu Style =======*/
 .dropdown nav ul li ul.sub_menu {
 	position:absolute;
-	right: 20px;
+	right: 5px;
 	margin-top: 10px;
 	background:white;
 	border:1px solid #ececec;
@@ -50,6 +51,7 @@ http://www.freshdesignweb.com/drop-down-responsive-menu-with-css3-and-jquery.htm
 	margin:0;
 	padding: 10px;
 	border-bottom:1px solid #ececec;
+	text-align: center;
 }
 .dropdown nav ul li ul.sub_menu li a {
 	white-space: nowrap;

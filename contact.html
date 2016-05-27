@@ -52,17 +52,38 @@
 			</div>
 
 			
-		<main id="about">
+		<main id="contact">
+			<h3>Contact Me</h3>
+			<p>Please let me know if you have any question or want to get any further informtaion about me :)</p>
+			<form>
+				<div>
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Your Name">
+				</div>
 
-			<div><img src="img/about.jpg"></div>
+				<div>
+					<label for="email">Email</label>
+					<input type="text" id="email" placeholder="Email Address">
+				</div>
+
 			<div>
-				<h2>Hi, there! I'm a Korean web designer and developer who lives in New Zealand and love it!</h2>
-				<p>I'm a student who is studying web design and development at Yoobee Design School in Wellington. I finished icreate course last year and taking a web development course in this year. </p>
- 
- 				<p>I have a bachelor degree of Chinese and Chinese literature in Konkuk University. I loves to learn another language, travel, be into another culture and that made her to come to New Zealand which is really far from Korea. And now I am falling in love with New Zealand and wants to find a job in here as a web designer and developer.</p>
-
- 				<a href="#" class="link-cv">Click here to see my CV</a>
+				<label for="subject">Subject</label>
+					<select id="subject">
+						<option value="">Click here to select subject</option>
+						<option value="question">Question</option>
+						<option value="review">Review</option>
+						<option value="sug">Suggestion</option>
+						<option value="job">Job offer</option>
+					</select>
 			</div>
+
+			<div>
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+			</div>
+
+				<input type="submit" value="submit" id="submit-btn" onclick="clicked();">
+			</form>
 		</main>
 
 		<footer>
