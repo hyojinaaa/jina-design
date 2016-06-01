@@ -17,8 +17,89 @@
 #section1 .scroll-tablet, #section1 .scroll-desktop {
   margin: 0 auto;
 }
+#section1 .ka {
+  display: none;
+}
+@media all and (min-width: 1530px) {
+  #section1 .ka {
+    display: block;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    -moz-animation: ka-moving 4s linear infinite;
+    -webkit-animation: ka-moving 4s linear infinite;
+    animation: ka-moving 4s linear infinite;
+  }
+}
 #section1 #ka1 {
-  opacity: 1;
+  top: 32%;
+  left: 48.5%;
+}
+#section1 #ka2 {
+  top: 32%;
+  left: 54%;
+  animation-delay: .2s;
+}
+#section1 #ka3 {
+  top: 32%;
+  left: 59.5%;
+  animation-delay: .4s;
+}
+#section1 #ka4 {
+  top: 42%;
+  left: 59.5%;
+  animation-delay: .6s;
+}
+#section1 #ka5 {
+  top: 52%;
+  left: 59.5%;
+  animation-delay: .8s;
+}
+#section1 #ka6 {
+  top: 62%;
+  left: 59.5%;
+  animation-delay: 1s;
+}
+#section1 #ka7 {
+  top: 62%;
+  left: 54%;
+  animation-delay: 1.2s;
+}
+#section1 #ka8 {
+  top: 62%;
+  left: 48.5%;
+  animation-delay: 1.4s;
+}
+#section1 #ka9 {
+  top: 62%;
+  left: 43%;
+  animation-delay: 1.6s;
+}
+#section1 #ka10 {
+  top: 62%;
+  left: 37%;
+  animation-delay: 1.8s;
+}
+#section1 #ka11 {
+  top: 52%;
+  left: 37%;
+  animation-delay: 2s;
+}
+#section1 #ka12 {
+  top: 42%;
+  left: 37%;
+  animation-delay: 2.2s;
+}
+#section1 #ka13 {
+  top: 32%;
+  left: 37%;
+  animation-delay: 2.4s;
+}
+#section1 #ka14 {
+  top: 32%;
+  left: 43%;
+  animation-delay: 2.6s;
 }
 
 #section2 {
@@ -125,7 +206,8 @@
 #section4 a p:hover {
   transform: scale(1.1);
 }
-#section4 .scroll-tablet, #section4 .scroll-desktop {
+
+.scroll-tablet, .scroll-desktop {
   margin: 0 auto;
 }
 
@@ -193,7 +275,7 @@
   -moz-animation-fill-mode: forwards;
   -webkit-animation: bounceIn 4s linear;
   -webkit-animation-fill-mode: forwards;
-  canimation: bounceIn 4s linear;
+  animation: bounceIn 4s linear;
   animation-fill-mode: forwards;
 }
 

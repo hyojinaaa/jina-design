@@ -18,17 +18,110 @@ text-align: center;
 	.scroll-tablet, .scroll-desktop {
   		margin: 0 auto;
   	}
+  	
+  	.ka {
+  		
+  		display: none;
 
-  	#ka1 {
-		// position: absolute;
-		opacity: 1;
-		// -moz-animation: ka-moving 3s linear;
+		@media all and (min-width: 1530px) {
+
+			display: block;
+			opacity: 0;
+
+			width: 50px;
+	  		height: 50px;
+			position: absolute;
+			
+			-moz-animation: ka-moving 4s linear infinite;
+			-webkit-animation: ka-moving 4s linear infinite;
+			animation: ka-moving 4s linear infinite;
+		}
+
+
 	}
-		// animation-name: ka-moving;
-	 //  	animation-duration: 3s;
-	 //  	animation-timing-function: ease-in-out;
-	 // 	animation-delay: .5s;
 
+	#ka1 {
+		top: 32%;
+		left: 48.5%;
+	}
+
+	#ka2 {
+		top: 32%;
+		left: 54%;
+		animation-delay: .2s;
+	}
+
+	#ka3 {
+		top: 32%;
+		left: 59.5%;
+		animation-delay: .4s;
+	}
+
+	#ka4 {
+		top: 42%;
+		left: 59.5%;
+		animation-delay: .6s;
+	}
+
+	#ka5 {
+		top: 52%;
+		left: 59.5%;
+		animation-delay: .8s;
+	}
+
+	#ka6 {
+		top: 62%;
+		left: 59.5%;
+		animation-delay: 1s;
+	}
+
+	#ka7 {
+		top: 62%;
+		left: 54%;
+		animation-delay: 1.2s;
+	}
+
+	#ka8 {
+		top: 62%;
+		left: 48.5%;
+		animation-delay: 1.4s;
+	}
+
+	#ka9 {
+		top: 62%;
+		left: 43%;
+		animation-delay: 1.6s;
+	}
+
+	#ka10 {
+		top: 62%;
+		left: 37%;
+		animation-delay: 1.8s;
+	}
+
+	#ka11 {
+		top: 52%;
+		left: 37%;
+		animation-delay: 2s;
+	}
+
+	#ka12 {
+		top: 42%;
+		left: 37%;
+		animation-delay: 2.2s;
+	}
+
+	#ka13 {
+		top: 32%;
+		left: 37%;
+		animation-delay: 2.4s;
+	}
+
+	#ka14 {
+		top: 32%;
+		left: 43%;
+		animation-delay: 2.6s;
+	}
 }
 
 
@@ -125,7 +218,8 @@ background: #70e1f5; /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, #70e1f5 , #ffd194); /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
-  a {
+
+  	a {
 
   	 p {
   	 	font-size: 30px;
@@ -148,15 +242,13 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
   	 		 transform: scale(1.1);
   	 	}
   	 }
-  } 
+  }
+ } 
 
   .scroll-tablet, .scroll-desktop {
   	margin: 0 auto;
-  }
+  }   
 
-   
-
-}
 
 .section {
 	position: relative;
@@ -228,7 +320,7 @@ background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, F
 	-moz-animation-fill-mode: forwards;
 	-webkit-animation: bounceIn 4s linear;  
 	-webkit-animation-fill-mode: forwards;
-	canimation: bounceIn 4s linear;  
+	animation: bounceIn 4s linear;  
 	animation-fill-mode: forwards;
 }
 
