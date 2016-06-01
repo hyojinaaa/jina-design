@@ -1,18 +1,63 @@
 @-moz-keyframes ka-moving {
 	
 	0%{
-		opacity: 0.2;
-		left: 20%;
-		top: 10%;
+		opacity: 0;
 	}
+  25% {
+    opacity: 0.25;
+  }
+
 	50% {
-		opacity: 0.4;
-		transform: rotate(20deg) scale(1.1);
+		opacity: 0.5;
 	}
+  75% {
+    opacity: 0.25;
+  }
 	100% {
-		opacity: 0.2;
-		transform: rotate(-20deg) scale(1);
+		opacity: 0;
 	}
+
+}
+
+@-webkit-keyframes ka-moving {
+  
+  0%{
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+
+}
+
+@keyframes ka-moving {
+  
+  0%{
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
 
 }
 
