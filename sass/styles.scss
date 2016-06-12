@@ -1088,8 +1088,18 @@ footer {
 
 // Google map
 #map {
-	
+	width: 300px;
 	height: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+	@media all and (min-width: 630px) {
+		width: 600px;
+	}
+
+	@media all and (min-width: 1000px) {
+		width: 900px;
+	}
 }
 
 

@@ -949,7 +949,20 @@ footer i {
 }
 
 #map {
+  width: 300px;
   height: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+@media all and (min-width: 630px) {
+  #map {
+    width: 600px;
+  }
+}
+@media all and (min-width: 1000px) {
+  #map {
+    width: 900px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
