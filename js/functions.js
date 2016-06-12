@@ -122,3 +122,45 @@ document.querySelector('#message').onkeyup = function(){
 
 }
 
+// map 
+function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 2,
+          center: {lat: 0, lng: -180},
+          mapTypeId: google.maps.MapTypeId.TERRAIN
+        });
+
+        var flightPlanCoordinates = [
+          {lat: 37.554752, lng: 126.903351},
+          {lat: 23.086193, lng: 113.172878},
+          {lat: -36.847792, lng: 174.760859},
+          {lat: -41.304603, lng: 174.797219}
+        ];
+        var flightPath = new google.maps.Polyline({
+          path: flightPlanCoordinates,
+          geodesic: true,
+          strokeColor: '#FF0000',
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+        });
+
+        flightPath.setMap(map);
+ 
+     
+    marker = new google.maps.Marker({
+    map: map,
+  	draggable: true,
+    animation: google.maps.Animation.DROP,
+    position: 
+    	{lat: -41.304603, lng: 174.797219}
+  });
+  marker.addListener('click', toggleBounce);
+}
+
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
