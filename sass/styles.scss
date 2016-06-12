@@ -820,6 +820,7 @@ footer {
 		color: white;
 		font-size: 14px;
 		letter-spacing: 4px;
+		clear: both;
 	}
 
 	article {
@@ -832,22 +833,20 @@ footer {
 
 			@media all and (min-width: 750px) {
 				width: 250px;
+				font-size: 16px;
 			}
 		}
 	}
 
-	.gd-vertical, .gd-horizontal {
+	#gd-vertical1, #gd-vertical2, .webdesign {
 		max-width: 250px;
-		max-height: 250px;
-	}
-
-	#gd-vertical1, #gd-vertical2 {
 
 		@media all and (min-width: 750px) {
 			width: 300px;
 			float: left;
 			padding-left: 25px;
 			box-sizing: border-box;
+			margin-left: 20px;
 
 			&:after {
 				content: '';
@@ -857,27 +856,62 @@ footer {
 
 		}
 
-	#gd-vertical1 {
-
-		@media all and (min-width: 750px) {
-		padding-top: 20px;
-		}
-	}
-
 	.gd-horizontal {
 		@media all and (min-width: 750px) {
 			width: 500px;
 		}
 	}
 
-	#gd-horizontal1 {
-		@media all and (min-width: 750px) {
-			width: 500px;
-		}
 	}
 
 }
 
+#gd-vertical1 {
+
+		div {
+			height: 250px;
+			background-color: yellow;
+			padding-top: 0;
+
+			img {
+				padding-top: 0;
+			}
+		}
+
+		@media all and (min-width: 750px) {
+		padding-top: 20px;
+		}
+}
+
+#gd-vertical2 {
+	p {
+		margin-top: 16px!important;
+	}
+}
+
+#gd-horizontal1, #gd-horizontal2, #gd-horizontal3 {
+		@media all and (min-width: 750px) {
+			width: 560px;
+			claer: both;
+			padding: 20px;
+
+			div {
+				width: 100%;
+				margin-top: 20px;
+			}
+
+			p {
+				margin: 0 auto;
+			}
+		}
+	}
+
+#gd-horizontal2, #gd-horizontal3 {
+	padding-top: 0;
+
+	div {
+		margin-top: 0;
+	}
 }
 
 .gd-img, .wd-img {
@@ -898,6 +932,25 @@ footer {
 	padding-top: 14px;
 	img {
 		padding-top: 30px;
+	}
+}
+
+#webdev {
+
+	@media all and (min-width: 750px) {
+		width: 600px;
+		margin: 0 auto;
+		text-align: center;
+
+		div {
+			width: 400px;
+		}
+
+
+		p {
+			margin: 0 auto;
+		}
+
 	}
 }
 
