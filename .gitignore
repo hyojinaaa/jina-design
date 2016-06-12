@@ -1,2 +1,5 @@
 .DS_store
 .sass_cache
+css/styles.css
+css/styles.css.map
+css/styles.min.css

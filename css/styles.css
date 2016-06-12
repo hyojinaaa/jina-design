@@ -17,8 +17,89 @@
 #section1 .scroll-tablet, #section1 .scroll-desktop {
   margin: 0 auto;
 }
+#section1 .ka {
+  display: none;
+}
+@media all and (min-width: 1530px) {
+  #section1 .ka {
+    display: block;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    -moz-animation: ka-moving 4s linear infinite;
+    -webkit-animation: ka-moving 4s linear infinite;
+    animation: ka-moving 4s linear infinite;
+  }
+}
 #section1 #ka1 {
-  opacity: 1;
+  top: 32%;
+  left: 48.5%;
+}
+#section1 #ka2 {
+  top: 32%;
+  left: 54%;
+  animation-delay: .2s;
+}
+#section1 #ka3 {
+  top: 32%;
+  left: 59.5%;
+  animation-delay: .4s;
+}
+#section1 #ka4 {
+  top: 42%;
+  left: 59.5%;
+  animation-delay: .6s;
+}
+#section1 #ka5 {
+  top: 52%;
+  left: 59.5%;
+  animation-delay: .8s;
+}
+#section1 #ka6 {
+  top: 62%;
+  left: 59.5%;
+  animation-delay: 1s;
+}
+#section1 #ka7 {
+  top: 62%;
+  left: 54%;
+  animation-delay: 1.2s;
+}
+#section1 #ka8 {
+  top: 62%;
+  left: 48.5%;
+  animation-delay: 1.4s;
+}
+#section1 #ka9 {
+  top: 62%;
+  left: 43%;
+  animation-delay: 1.6s;
+}
+#section1 #ka10 {
+  top: 62%;
+  left: 37%;
+  animation-delay: 1.8s;
+}
+#section1 #ka11 {
+  top: 52%;
+  left: 37%;
+  animation-delay: 2s;
+}
+#section1 #ka12 {
+  top: 42%;
+  left: 37%;
+  animation-delay: 2.2s;
+}
+#section1 #ka13 {
+  top: 32%;
+  left: 37%;
+  animation-delay: 2.4s;
+}
+#section1 #ka14 {
+  top: 32%;
+  left: 43%;
+  animation-delay: 2.6s;
 }
 
 #section2 {
@@ -125,7 +206,8 @@
 #section4 a p:hover {
   transform: scale(1.1);
 }
-#section4 .scroll-tablet, #section4 .scroll-desktop {
+
+.scroll-tablet, .scroll-desktop {
   margin: 0 auto;
 }
 
@@ -193,7 +275,7 @@
   -moz-animation-fill-mode: forwards;
   -webkit-animation: bounceIn 4s linear;
   -webkit-animation-fill-mode: forwards;
-  canimation: bounceIn 4s linear;
+  animation: bounceIn 4s linear;
   animation-fill-mode: forwards;
 }
 
@@ -345,6 +427,7 @@ body {
 footer {
   max-width: 300px;
   margin: 0 auto;
+  clear: both;
 }
 
 #about div:first-child {
@@ -603,6 +686,266 @@ footer i {
 #contact #submit-btn:hover {
   background-color: #78C6B5;
   color: white;
+}
+
+#work {
+  width: 250px;
+  margin: 0 auto;
+  clear: both;
+}
+@media all and (min-width: 750px) {
+  #work {
+    width: 600px;
+    margin: 0 auto;
+  }
+  #work div {
+    width: 250px;
+    display: inline-block;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work {
+    width: 1200px;
+  }
+}
+#work h3 {
+  font-family: 'Cinzel', serif;
+  padding: 10px;
+  background-color: #78C6B5;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 4px;
+  clear: both;
+}
+@media all and (min-width: 750px) {
+  #work h3 {
+    width: 400px;
+    margin: 20px auto;
+    margin-bottom: 30px;
+  }
+}
+#work article {
+  margin-top: 20px;
+}
+#work article p {
+  margin-top: 4px;
+  text-align: center;
+  font-size: 12px;
+}
+@media all and (min-width: 750px) {
+  #work article p {
+    width: 250px;
+    font-size: 16px;
+  }
+}
+#work #gd-vertical1, #work #gd-vertical2, #work .webdesign {
+  max-width: 250px;
+}
+@media all and (min-width: 750px) {
+  #work #gd-vertical1, #work #gd-vertical2, #work .webdesign {
+    width: 300px;
+    float: left;
+    padding-left: 25px;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+  #work #gd-vertical1:after, #work #gd-vertical2:after, #work .webdesign:after {
+    content: '';
+    display: none;
+    clear: both;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work .webdesign {
+    max-width: 600px;
+    margin-left: 50px;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work .webdesign div {
+    width: 500px;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work .webdesign p {
+    margin-left: 130px;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work #webdesign1 {
+    margin-right: 200px;
+  }
+}
+
+@media all and (min-width: 1240px) {
+  .graphic {
+    float: left;
+  }
+}
+
+#gd-vertical1 div {
+  height: 250px;
+  padding-top: 0;
+}
+#gd-vertical1 div img {
+  padding-top: 0;
+}
+@media all and (min-width: 750px) {
+  #gd-vertical1 {
+    padding-top: 20px;
+  }
+}
+
+#gd-vertical2 p {
+  margin-top: 16px !important;
+}
+
+@media all and (min-width: 750px) {
+  #gd-horizontal1, #gd-horizontal2, #gd-horizontal3 {
+    width: 560px;
+    claer: both;
+    padding: 20px;
+  }
+  #gd-horizontal1 div, #gd-horizontal2 div, #gd-horizontal3 div {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #gd-horizontal1 p, #gd-horizontal2 p, #gd-horizontal3 p {
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1240px) {
+  #gd-horizontal1 {
+    margin-left: 60px;
+    padding-top: 0;
+  }
+}
+@media all and (min-width: 1240px) {
+  #gd-horizontal1 div {
+    margin-top: 0;
+  }
+}
+
+#gd-horizontal2, #gd-horizontal3 {
+  padding-top: 0;
+}
+#gd-horizontal2 div, #gd-horizontal3 div {
+  margin-top: 0;
+}
+
+@media all and (min-width: 1240px) {
+  #gd-horizontal3 {
+    padding-top: 35px;
+  }
+}
+
+.gd-img, .wd-img {
+  width: 100%;
+  height: auto;
+}
+.gd-img:hover, .wd-img:hover {
+  opacity: 0.8;
+}
+
+.img-container1 {
+  width: 250px;
+  height: 350px;
+}
+
+#hm-container {
+  padding-top: 14px;
+}
+#hm-container img {
+  padding-top: 30px;
+}
+
+@media all and (min-width: 750px) {
+  #webdev {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #webdev div {
+    width: 400px;
+  }
+  #webdev p {
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 1240px) {
+  #webdev div {
+    width: 600px;
+  }
+}
+
+#photos {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media all and (min-width: 750px) {
+  #photos {
+    width: 700px;
+  }
+}
+@media all and (min-width: 1200px) {
+  #photos {
+    width: 1100px;
+  }
+}
+@media all and (min-width: 1600px) {
+  #photos {
+    width: 1580px;
+  }
+}
+#photos div {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media all and (min-width: 750px) {
+  #photos div {
+    width: 500px;
+  }
+}
+@media all and (min-width: 1200px) {
+  #photos div {
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media all and (min-width: 1600px) {
+  #photos div {
+    width: 430px;
+    margin-left: 75px;
+    margin-bottom: 40px;
+  }
+}
+#photos div img {
+  width: 100%;
+}
+#photos div img:hover {
+  opacity: 0.8;
+}
+#photos p {
+  padding-bottom: 20px;
+  text-align: center;
+  clear: both;
+  padding-top: 20px;
+}
+@media all and (min-width: 750px) {
+  #photos p {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 1200px) {
+  #photos p {
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
