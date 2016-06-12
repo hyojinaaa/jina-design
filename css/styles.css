@@ -702,6 +702,11 @@ footer i {
     display: inline-block;
   }
 }
+@media all and (min-width: 1240px) {
+  #work {
+    width: 1200px;
+  }
+}
 #work h3 {
   font-family: 'Cinzel', serif;
   padding: 10px;
@@ -712,6 +717,13 @@ footer i {
   font-size: 14px;
   letter-spacing: 4px;
   clear: both;
+}
+@media all and (min-width: 750px) {
+  #work h3 {
+    width: 400px;
+    margin: 20px auto;
+    margin-bottom: 30px;
+  }
 }
 #work article {
   margin-top: 20px;
@@ -744,15 +756,36 @@ footer i {
     clear: both;
   }
 }
-@media all and (min-width: 750px) {
-  #work #gd-vertical1 .gd-horizontal, #work #gd-vertical2 .gd-horizontal, #work .webdesign .gd-horizontal {
+@media all and (min-width: 1240px) {
+  #work .webdesign {
+    max-width: 600px;
+    margin-left: 50px;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work .webdesign div {
     width: 500px;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work .webdesign p {
+    margin-left: 130px;
+  }
+}
+@media all and (min-width: 1240px) {
+  #work #webdesign1 {
+    margin-right: 200px;
+  }
+}
+
+@media all and (min-width: 1240px) {
+  .graphic {
+    float: left;
   }
 }
 
 #gd-vertical1 div {
   height: 250px;
-  background-color: yellow;
   padding-top: 0;
 }
 #gd-vertical1 div img {
@@ -783,11 +816,29 @@ footer i {
   }
 }
 
+@media all and (min-width: 1240px) {
+  #gd-horizontal1 {
+    margin-left: 60px;
+    padding-top: 0;
+  }
+}
+@media all and (min-width: 1240px) {
+  #gd-horizontal1 div {
+    margin-top: 0;
+  }
+}
+
 #gd-horizontal2, #gd-horizontal3 {
   padding-top: 0;
 }
 #gd-horizontal2 div, #gd-horizontal3 div {
   margin-top: 0;
+}
+
+@media all and (min-width: 1240px) {
+  #gd-horizontal3 {
+    padding-top: 35px;
+  }
 }
 
 .gd-img, .wd-img {
@@ -821,6 +872,11 @@ footer i {
   }
   #webdev p {
     margin: 0 auto;
+  }
+}
+@media all and (min-width: 1240px) {
+  #webdev div {
+    width: 600px;
   }
 }
 

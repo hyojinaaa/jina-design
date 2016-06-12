@@ -811,6 +811,10 @@ footer {
 		}
 	}
 
+	@media all and (min-width: 1240px) {
+		width: 1200px;
+	}
+
 	h3 {
 		font-family: 'Cinzel', serif;
 		padding: 10px;
@@ -821,6 +825,12 @@ footer {
 		font-size: 14px;
 		letter-spacing: 4px;
 		clear: both;
+
+		@media all and (min-width: 750px) {
+			width: 400px;
+			margin: 20px auto;
+			margin-bottom: 30px;
+		}
 	}
 
 	article {
@@ -836,6 +846,7 @@ footer {
 				font-size: 16px;
 			}
 		}
+
 	}
 
 	#gd-vertical1, #gd-vertical2, .webdesign {
@@ -856,21 +867,45 @@ footer {
 
 		}
 
-	.gd-horizontal {
-		@media all and (min-width: 750px) {
-			width: 500px;
+	}
+
+	.webdesign {
+		@media all and (min-width: 1240px) {
+			max-width: 600px;
+			margin-left: 50px;
+		}
+
+		div {
+			@media all and (min-width: 1240px) {
+				width: 500px;
+			}
+		}
+
+		p {
+			@media all and (min-width: 1240px) {
+				margin-left: 130px;
+			}
 		}
 	}
 
+	#webdesign1 {
+		@media all and (min-width: 1240px) {
+			margin-right: 200px;
+		}
 	}
 
+}
+
+.graphic {
+	@media all and (min-width: 1240px) {
+		float: left;
+	}
 }
 
 #gd-vertical1 {
 
 		div {
 			height: 250px;
-			background-color: yellow;
 			padding-top: 0;
 
 			img {
@@ -906,11 +941,31 @@ footer {
 		}
 	}
 
+#gd-horizontal1 {
+	@media all and (min-width: 1240px) {
+		margin-left: 60px;
+		padding-top: 0;
+	}
+
+	div {
+		@media all and (min-width: 1240px) {
+		margin-top: 0;
+		}
+	}
+}
+
+
 #gd-horizontal2, #gd-horizontal3 {
 	padding-top: 0;
 
 	div {
 		margin-top: 0;
+	}
+}
+
+#gd-horizontal3 {
+	@media all and (min-width: 1240px) {
+		padding-top: 35px;
 	}
 }
 
@@ -935,6 +990,8 @@ footer {
 	}
 }
 
+
+
 #webdev {
 
 	@media all and (min-width: 750px) {
@@ -951,6 +1008,13 @@ footer {
 			margin: 0 auto;
 		}
 
+	}
+
+	@media all and (min-width: 1240px) {
+
+		div { 
+			width: 600px;
+		}
 	}
 }
 
